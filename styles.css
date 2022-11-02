@@ -36,6 +36,12 @@ header h1 {
   background-color: white;
   color: midnightblue;
   box-shadow: 5px 5px 5px 5px lightgrey;
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover{
+  opacity: 1;
 }
 
 .card img {
@@ -58,7 +64,38 @@ h6 {
   list-style-type: none;
 }
 
+li:hover {
+  color: rgb(6, 136, 39);
+}
+
 #instagram-handle {
   font-size: 1.5em;
   color: #B48CE0;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  border: blue 2px solid;
+  transition: all 2s; 
+  
+}
+footer:hover {
+  background-color: blue;
+  color: white;
+}
+footer a:link {
+  color: red;
+}
+
+footer a:hover {
+color: white;
+background-color: black;
+}
+footer a:active {
+  color:yellow;
+}
+
+footer p::after {
+  content:"😃";
 }
